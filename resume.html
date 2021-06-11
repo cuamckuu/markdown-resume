@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>resume</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+
+  /* Whole document */
+  * {
+      margin-top: 0 !important;
+  }
+
+  body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      background: #FFFFFF;
+      padding: 5px;
+  }
+
+  /* Title of the resume */
+  h1 {
+      font-size: 55px;
+      /*color: #757575;*/
+      text-align: center;
+  }
+
+  /* Titles of categories */
+  h1, h2 {
+      color: #406DBF;
+      margin-bottom: 10px;
+  }
+
+  /* There is a bar just before each category */
+  h2:before {
+      content: "";
+      display: inline-block;
+      margin-right: 1%;
+      width: 7%;
+      height: 14px;
+      background-color: #668ACC
+  }
+
+  /* Definitions */
+  dt {
+      float: left;
+      clear: left;
+      width: 15%;
+      font-weight: bold;
+  }
+
+  dd {
+      margin-left: 15%;
+      margin-bottom: 10px;
+      border-left: 3px solid gray;
+      padding-left: 10px;
+  }
+
+  p {
+      margin-top: 0;
+      margin-bottom: 7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+      text-align: center;
+      border-left: none;
+  }
+
+  /* Horizontal separators */
+  hr {
+      color: #A6A6A6;
+  }
+
+  table {
+      width: 100%;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+      flex: 50%;
+  }
+
+  </style>
+</head>
+<body>
+<h1 id="александр-кошкин">Александр Кошкин</h1>
+<blockquote>
+<p>tg:<a href="https://t.me/cuamckuu">@cuamckuu</a> | <a href="mailto:sasha23969@mail.ru" class="email">sasha23969@mail.ru</a> | <a href="tel:+79638841705">+7 (963) 884-17-05</a> | <a href="https://github.com/cuamckuu">github.com/cuamckuu</a></p>
+</blockquote>
+<div class="row">
+<div class="column">
+<h2 id="навыки-и-технологии">Навыки и технологии</h2>
+<ul>
+<li><strong>Языки:</strong> Python 3, C++, JavaScript, Golang, SQL, Bash</li>
+<li><strong>Библиотеки и фреймворки:</strong> Flask, Django, FastAPI, aiohttp, SQLAlchemy, pandas, numpy, Celery, playwright, Qt, Boost, GTest, Vue.JS</li>
+<li><strong>Инструменты:</strong> Git, Docker, PostgreSQL, Redis, RabbitMQ, JIRA, CI/CD, Selenium, protobuf</li>
+<li><strong>Прочее:</strong> Английский (Intermediate+), Code review, Тесты и TDD, Проектирование REST API, Conventional commits</li>
+</ul>
+<h2 id="опыт">Опыт</h2>
+<dl>
+<dt>01.2021<br>–<br>…</dt>
+<dd><p><strong>Backend Developer</strong><br />
+<em>JSC “R&amp;EC ETU”. Отдел систем сбора и управления</em></p>
+<ul>
+<li>Настоял на проверке стиля Python в CI/CD и реализовал её в удобном виде</li>
+<li>Разработал компонент графиков на Vue для фронтенда космодрома</li>
+<li>Помог обеспечить безопасное общение frontend и backend</li>
+<li>Упростил код и исправил баги с исключениями, флагами и деструкторами в приложении на C++, Qt и Boost</li>
+</ul>
+</dd>
+<dt>09.2019<br>–<br>01.2021</dt>
+<dd><p><strong>Backend Python Developer</strong><br />
+<em>Neurobet.ru</em></p>
+<ul>
+<li>Реализовал парсеры и торговых роботов для 5 букмекерских контор</li>
+<li>Нашёл прибыльные стратегии на футбол и настольный теннис</li>
+<li>Писал ботов для Telegram и создал tg-inviter (см. Проекты)</li>
+<li>Реализовал CRM для управления подписками пользователей</li>
+<li>Разработал приложения для Andoid и iOS для получения сигналов</li>
+<li>Управлял небольшой командой разработчиков из 3-х новичков</li>
+<li>Разрабатывал архитектуру и занимался переходом к микросервисам и CQRS</li>
+</ul>
+</dd>
+<dt>07.2019<br>–<br>08.2019</dt>
+<dd><p><strong>Intern C++ Developer</strong><br />
+<em>Digital Security. Отдел аудита защищённости</em></p>
+<ul>
+<li>Занимался исследованием безопасности бесконтактных банковских карт</li>
+<li>Разработал утилиту nfc-frog (см. Проекты)</li>
+<li>Поработал с куратором и прослушал курс по информационной безопасности</li>
+</ul>
+</dd>
+<dt>10.2017<br>–<br>05.2019</dt>
+<dd><p><strong>C++/Python Developer.</strong><br />
+<em>СПбГЭТУ “ЛЭТИ”</em></p>
+<ul>
+<li>Работал над исследовательскими проектами на кафедрах ВУЗа</li>
+<li>Ускорил вычисления в 10 раз для физических экспериментов на C++</li>
+<li>Портировал алгоритмы обработки изображений под MIPS архитектуру с SIMD инструкциями</li>
+<li>Модифицировал эмулятор QEMU для частотного анализа вызовов ассемблерных инструкций</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="column">
+<h2 id="проекты">Проекты</h2>
+<dl>
+<dt><a href="https://github.com/cuamckuu/nfc-frog">NFC-Frog</a></dt>
+<dd><p><strong>Проект на Github: 98 звёзд, 24 форка</strong></p>
+<p>Утилита на С++ для работы с бесконтактными банковскими EMV картами. Позволяет считывать данные с карты и проводить 2 вида DoS атак</p>
+</dd>
+<dt><a href="https://github.com/cuamckuu/tg-inviter">tg-inviter</a></dt>
+<dd><p><strong>Проект на Github: 10 звёзд, 3 форка</strong></p>
+<p>Модуль Python 3 для генерации индивидуальных пригласительных ссылок в Telegram каналы</p>
+</dd>
+<dt><a href="https://cuamckuu.github.io">Матрица навыков</a></dt>
+<dd><p><strong>Проект на Github: 11 звёзд</strong></p>
+<p>Для изучения Vue.JS сделал улучшенную интерактивную версию “Матрицы навыков разработчика”, которая была создана Sijin Joseph</p>
+</dd>
+</dl>
+<h2 id="образование">Образование</h2>
+<dl>
+<dt>2017 – 2021</dt>
+<dd><p><strong>Бакалавриат СПбГЭТУ “ЛЭТИ”</strong><br />
+“Информатика и вычислительная техника”</p>
+<p><em>Тема диплома:</em> “Применение вероятностных методов для расчёта динамики заряженных частиц в электромагнитном поле”</p>
+<p><em>Прочее:</em> Красный диплом. Средний балл: 4.79</p>
+</dd>
+</dl>
+<h2 id="прочие-достижения">Прочие достижения</h2>
+<p><strong>Автор</strong></p>
+<ul>
+<li>Публикации “Адаптация метода Монте-Карло для расчёта динамики заряженных частиц в электромагнитном поле”</li>
+<li>Статьи на Habrahabr <a href="https://habr.com/ru/company/dsec/blog/468937/">“Атаки на бесконтактные банковские карты”</a></li>
+</ul>
+<p><strong>Соавтор публикаций</strong></p>
+<ul>
+<li>“Оптимизация параметров фокусирующей магнитной системы для стабилизации пучка заряженных частиц в кильватерном ускорителе”</li>
+<li>“Исследование возможностей применения перспективных отечественных векторных процессоров при обработке сигналов и многомерной визуализации”</li>
+<li>“Модельное профилирование при построении векторных архитектур процессоров”</li>
+<li>“Применение нелинейных диэлектриков - современный взгляд”</li>
+</ul>
+<p><strong>Прочее</strong></p>
+<ul>
+<li>Победитель молодёжного конкурса инновационных проектов СПбГЭТУ “ЛЭТИ” 2018</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
